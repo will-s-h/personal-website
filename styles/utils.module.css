@@ -50,3 +50,7 @@
   .lightText {
     color: #666;
   }
+
+  .gradient {
+    background: linear-gradient(to right bottom, #aa78a6, #cb769e, #e7778c, #f77f72, #fa9054, #f7874e, #f37e48, #f07443, #e24c5d, #bf3276, #8a3088, #3d348b);
+  }

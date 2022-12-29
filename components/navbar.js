@@ -15,7 +15,7 @@ export default function NavBar() {
                             class= "rounded-full p-3"
                             alt="profile"
                         />
-                        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">William Huang</span>
+                        <span class="self-center text-xl font-bold whitespace-nowrap font-sans">William Huang</span>
                     </Link>
                     <div class="flex items-center">
                         <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">

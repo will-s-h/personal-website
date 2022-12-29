@@ -21,11 +21,9 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
 
-      <div class="font-sans font-bold text-6xl sm:text-6xl md:text-7xl p{0|0|0|0} text-center tracking-tight
-       text-black pb-1">The Website of</div>
-      <div class="font-sans font-extrabold text-6xl sm:text-6xl md:text-7xl pb-10 text-center tracking-tight 
+      <div class="font-sans font-extrabold text-6xl sm:text-6xl md:text-7xl pb-10 tracking-tight 
       text-black">
-        <span class="px-2 bg-gold-300">William Huang</span>
+        William Huang
       </div>
 
       <section className={utilStyles.headingMd}>

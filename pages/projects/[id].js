@@ -1,22 +1,22 @@
 import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../lib/posts'
+import { getAllProjectIds, getProjectData } from '../../lib/projects' // only difference from [id].js in 
 import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 
-export default function Post({ postData }) {
+export default function Project({ projectData }) {
   return (
     <Layout>
       <Head>
-        <title>{postData.title}</title>
+        <title>{projectData.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+        <h1 className={utilStyles.headingXl}>{projectData.title}</h1>
         <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} />
+          <Date dateString={projectData.date} />
         </div>
         <article class="prose md:prose-xl prose-p:leading-normal">
-          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml}}></div>
+          <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml}}></div>
         </article>
       </article>
     </Layout>
@@ -24,7 +24,7 @@ export default function Post({ postData }) {
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds()
+  const paths = getAllProjectIds()
   return {
     paths,
     fallback: false
@@ -32,10 +32,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id)
+  const projectData = await getProjectData(params.id)
   return {
     props: {
-      postData
+      projectData
     }
   }
 }

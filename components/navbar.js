@@ -15,7 +15,7 @@ export default function NavBar() {
                             class= "rounded-full p-3"
                             alt="profile"
                         />
-                        <span class="self-center text-xl font-bold whitespace-nowrap font-sans">William Huang</span>
+                        <span class="self-center text-xl font-light whitespace-nowrap font-sans">William Huang</span>
                     </Link>
                     <div class="flex items-center">
                         <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
@@ -31,9 +31,9 @@ export default function NavBar() {
                             ['Projects', '/projects'],
                             ['Writing', '/posts'],
                         ].map(([title, url]) => (
-                            <Link href={url} className="rounded-lg px-7 py-2 text-black font-medium group transition duration-300" style={{textDecoration: 'none'}}>
+                            <Link href={url} className="rounded-lg px-7 py-2 text-black font-light group transition duration-300 hover:scale-110" style={{textDecoration: 'none'}}>
                                 {title}
-                                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-cobalt-300">
+                                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-red">
                                 </span>
                             </Link>
                         ))}

@@ -3,18 +3,18 @@ import Link from 'next/link';
 import Date from '../components/date';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
-import { getSortedProjectsData } from '../lib/projects';
+import { getSortedPostsData } from '../lib/posts';
 
 export async function getStaticProps() {
-  const allProjectsData = getSortedProjectsData();
+  const allPostsData = getSortedPostsData();
   return {
     props: {
-      allProjectsData,
+      allPostsData,
     },
   };
 }
 
-export default function Home({ allProjectsData }) {
+export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
@@ -23,21 +23,21 @@ export default function Home({ allProjectsData }) {
 
       <div class="font-sans font-extrabold text-6xl sm:text-6xl md:text-7xl pb-10 tracking-tight 
       text-black">
-        Projects
+        Writing
       </div>
 
       <section className={utilStyles.headingMd}>
-        <p>Here are some of the projects I've been working on.</p>
+        <p>Here is an assortment of my writing.</p>
       </section>
 
       <p class="pb-5"/>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 class="font-sans font-bold text-2xl pb-2">Projects</h2>
+        <h2 class="font-sans font-bold text-2xl pb-2">Posts</h2>
         <ul className={utilStyles.list}>
-          {allProjectsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/projects/${id}`}>
+              <Link href={`/Posts/${id}`}>
               <div class="rounded-lg bg-black bg-opacity-5 hover:shadow-lg hover:bg-opacity-0 p-2">
                 <span class="font-sans font-light">{title}</span>
                 <br />

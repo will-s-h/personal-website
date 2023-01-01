@@ -27,7 +27,6 @@ export default function NavBar() {
                     <nav class="hidden lg:flex lg:order-1" id="mobile-menu-2">
                         {[
                             ['Home', '/'],
-                            ['Resume', '/resume'],
                             ['Projects', '/projects'],
                             ['Writing', '/writing'],
                         ].map(([title, url]) => (

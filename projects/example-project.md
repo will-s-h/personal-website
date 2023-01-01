@@ -3,9 +3,4 @@ title: 'Example Project'
 date: '2022-12-28'
 ---
 
-This is my example project.
-
-## Example
-- point 1.
-- point 2.
-- point 3.
+This is a placeholder for my past and future projects. For now, see my resume for more details on my projects. Stay tuned!

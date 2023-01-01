@@ -27,9 +27,9 @@ export default function NavBar() {
                     <nav class="hidden lg:flex lg:order-1" id="mobile-menu-2">
                         {[
                             ['Home', '/'],
-                            ['About', '/about'],
+                            ['Resume', '/resume'],
                             ['Projects', '/projects'],
-                            ['Writing', '/posts'],
+                            ['Writing', '/writing'],
                         ].map(([title, url]) => (
                             <Link href={url} className="rounded-lg px-7 py-2 text-black font-light group transition duration-300 hover:scale-110" style={{textDecoration: 'none'}}>
                                 {title}

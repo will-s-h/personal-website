@@ -37,7 +37,7 @@ export default function Home({ allPostsData }) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/Posts/${id}`}>
+              <Link href={`/posts/${id}`}>
               <div class="rounded-lg bg-black bg-opacity-5 hover:shadow-lg hover:bg-opacity-0 p-2">
                 <span class="font-sans font-light">{title}</span>
                 <br />

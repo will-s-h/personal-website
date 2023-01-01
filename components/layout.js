@@ -19,10 +19,11 @@ export default function Layout({ children, home }) {
         <main>{children}</main>
         {!home && (
           <div className={styles.backToHome}>
-            <Link href="/">Back to home</Link>
+            <Link href="/" class="font-bold hover:opacity-70">Back to home</Link>
           </div>
         )}
       </div>
+      <br/>
     </Fragment>
   );
 }

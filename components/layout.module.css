@@ -1,7 +1,6 @@
 .container {
     max-width: 1280px;
     padding: 0 1rem;
-    margin: 3rem auto 6rem;
 }
   
 .header {
@@ -12,4 +11,8 @@
   
 .backToHome {
     margin: 3rem 0 0;
+}
+
+.defeatScrollBar {
+    margin-right: calc(-1 * (100vw - 100%));
 }

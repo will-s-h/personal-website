@@ -12,8 +12,8 @@ export default function Project({ projectData }) {
         <title>{projectData.title}</title>
       </Head>
         
-      <h1 class="text-black text-center font-sans font-bold text-5xl pb-2 ">{projectData.title}</h1>
-      <div class="text-center font-light text-xl">
+      <h1 class="text-black text-center font-sans font-bold text-5xl pb-2">{projectData.title}</h1>
+      <div class="text-center font-light text-xl w-full">
         <Date dateString={projectData.date}/>
       </div>
 

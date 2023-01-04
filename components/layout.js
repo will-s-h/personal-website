@@ -15,17 +15,14 @@ export default function Layout({ children, home }) {
         <title>{siteMetadata.siteTitle}</title>
         <link rel="icon" href="/images/profile.jpg"></link>
       </Head>
-      <NavBar/>
-      <div className={styles.container}>
-        <main>{children}</main>
-        {!home && (
-          <div className={styles.backToHome}>
-            <Link href="/" class="font-bold hover:opacity-70">Back to home</Link>
-          </div>
-        )}
+      <div className={styles.defeatScrollBar}>
+        <NavBar/>
+        <div class="mt-5 max-w-[1280px] mx-auto px-4 lg:px-6">
+          <main>{children}</main>
+        </div>
+        <Footer/>
+        <br/>
       </div>
-      <Footer/>
-      <br/>
     </Fragment>
   );
 }

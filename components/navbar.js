@@ -30,7 +30,7 @@ export default function NavBar() {
                             ['Projects', '/projects'],
                             ['Writing', '/writing'],
                         ].map(([title, url]) => (
-                            <Link href={url} className="rounded-lg px-7 py-2 text-black font-light group transition duration-300 hover:scale-110" style={{textDecoration: 'none'}}>
+                            <Link href={url} className="rounded-lg px-7 py-2 text-black font-semibold group transition duration-300 hover:scale-110" style={{textDecoration: 'none'}}>
                                 {title}
                                 <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-red">
                                 </span>

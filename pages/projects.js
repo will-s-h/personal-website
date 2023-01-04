@@ -33,20 +33,14 @@ export default function Home({ allProjectsData }) {
       <p class="pb-5"/>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 class="font-sans font-bold text-2xl pb-2">Projects</h2>
-        <ul className={utilStyles.list}>
-          {allProjectsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/projects/${id}`}>
-              <div class="rounded-lg bg-black bg-opacity-5 hover:shadow-lg hover:bg-opacity-0 p-2">
-                <span class="font-sans font-light">{title}</span>
-                <br />
-                <span class="font-sans text-black text-sm text-opacity-50">
-                  <Date dateString={date} />
-                </span>
+        <ul class="grid gap-4 sm:grid-cols-1 md:grid-cols-3">
+          {allProjectsData.map(({ id, title, description }) => (
+            <Link href={`/projects/${id}`}>
+              <div class="group w-full h-full p-5 border-8 border-blue hover:border-red hover:bg-red">
+                <span class="block truncate font-sans font-black text-black group-hover:text-yellow">{title}</span>
+                <span class="font-sans text-sm text-black group-hover:text-yellow">{description}</span>
               </div>
-              </Link>
-            </li>
+            </Link>
           ))}
         </ul>
       </section>

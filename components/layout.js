@@ -1,19 +1,20 @@
-import Head from 'next/head';
-import Image from 'next/image';
 import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
+import siteMetadata from './siteMetadata';
 import NavBar from './navbar';
-import Link from 'next/link';
+import Footer from './footer';
 
+import Head from 'next/head';
+import Link from 'next/link';
 import React from 'react';
 const Fragment = React.Fragment;
-
-const name = 'William Huang';
-export const siteTitle = 'William Huang\'s Personal Website';
 
 export default function Layout({ children, home }) {
   return (
     <Fragment>
+      <Head>
+        <title>{siteMetadata.siteTitle}</title>
+        <link rel="icon" href="/images/profile.jpg"></link>
+      </Head>
       <NavBar/>
       <div className={styles.container}>
         <main>{children}</main>
@@ -23,6 +24,7 @@ export default function Layout({ children, home }) {
           </div>
         )}
       </div>
+      <Footer/>
       <br/>
     </Fragment>
   );

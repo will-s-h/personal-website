@@ -20,9 +20,9 @@ export default function Project({ projectData }) {
       {/* TODO: code section for tags */}
 
       <hr class="my-3 mx-auto w-48 h-1 bg-gray-200 rounded border-0"/>
-        <div class="prose prose-lg max-w-none">
-          <ReactMarkdown>{projectData.content}</ReactMarkdown>
-        </div>
+      <div class="prose prose-lg max-w-none">
+        <ReactMarkdown>{projectData.content}</ReactMarkdown>
+      </div>
     </Layout>
   )
 }

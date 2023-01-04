@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Date from '../components/date';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
+import AllPosts from '../lib/allPosts';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -32,18 +32,7 @@ export default function Home({ allPostsData }) {
 
       <p class="pb-5"/>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <ul class="grid gap-4 sm:grid-cols-1 md:grid-cols-3">
-          {allPostsData.map(({ id, title, description }) => (
-            <Link href={`/posts/${id}`}>
-              <div class="group w-full h-full p-5 border-8 border-purple hover:border-yellow hover:bg-yellow">
-                <span class="block truncate font-sans font-black text-black group-hover:text-purple">{title}</span>
-                <span class="font-sans text-sm text-black group-hover:text-purple">{description}</span>
-              </div>
-            </Link>
-          ))}
-        </ul>
-      </section>
+      <AllPosts allPostsData={allPostsData}/>      
     </Layout>
   );
 }

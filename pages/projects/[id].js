@@ -12,7 +12,7 @@ export default function Project({ projectData }) {
         <title>{projectData.title}</title>
       </Head>
         
-      <h1 class="text-black text-center font-sans font-bold text-5xl pb-2">{projectData.title}</h1>
+      <h1 class="text-black text-center font-sans font-bold text-3xl mlg:text-5xl pb-2">{projectData.title}</h1>
       <div class="text-center font-light text-xl w-full">
         <Date dateString={projectData.date}/>
       </div>
@@ -20,7 +20,7 @@ export default function Project({ projectData }) {
       {/* TODO: code section for tags */}
 
       <hr class="my-3 mx-auto w-48 h-1 bg-gray-200 rounded border-0"/>
-      <div class="prose prose-lg max-w-none">
+      <div class="prose prose-md mlg:prose-lg max-w-none">
         <ReactMarkdown>{projectData.content}</ReactMarkdown>
       </div>
     </Layout>

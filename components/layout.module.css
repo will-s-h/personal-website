@@ -14,5 +14,5 @@
 }
 
 .defeatScrollBar {
-    margin-right: calc(-1 * (100vw - 100%));
+    padding-left: calc((100vw - 100%));
 }

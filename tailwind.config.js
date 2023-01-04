@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'mlg': '850px', // medium large
+      }, 
+      
       colors: {
         transparent: 'transparent',
         current: 'currentColor',

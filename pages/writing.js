@@ -27,7 +27,7 @@ export default function Home({ allPostsData }) {
       </div>
 
       <section className={utilStyles.headingMd}>
-        <p>Here is an assortment of my writing.</p>
+        <p>Here is an assortment of my research papers, notes, and other writing.</p>
       </section>
 
       <p class="pb-5"/>

@@ -7,8 +7,7 @@ import ReactMarkdown from 'react-markdown';
 import Custom404 from '../404';
 
 export default function Project({ projectData }) {
-  return projectData.draft ? (<Custom404/>) :
-  (
+  return (
     <Layout>
       <Head>
         <title>{projectData.title}</title>

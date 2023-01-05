@@ -3,7 +3,8 @@ title: 'Tongue Cancer Classification'
 date: '2023-01-04'
 tags: ['CNN', 'Neural Network', 'PyTorch', Medical AI']
 description: 'Convolutional neural networks custom built to identify tongue cancer and a tumor''s maligancy.'
-featured: true
+draft: true
+featured: false
 ---
 
 ## Overview

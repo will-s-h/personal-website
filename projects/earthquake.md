@@ -3,7 +3,7 @@ title: 'RNNs for Earthquakes: Predicting Seismic Activity and Gauging Risk'
 date: '2019-01-01'
 tags: ['RNN', 'Machine Learning', 'Sustainability AI']
 description: 'Analyzing plate tectonic stability and probability of future earthquakes across California with RNNs.'
-featured: false
+featured: true
 ---
 
 ## Overview

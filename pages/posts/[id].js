@@ -4,9 +4,11 @@ import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 import ReactMarkdown from 'react-markdown';
+import Custom404 from './404';
 
 export default function Post({ postData }) {
-  return (
+  return postData.draft ? (<Custom404/>) :
+  (
     <Layout>
       <Head>
         <title>{postData.title}</title>

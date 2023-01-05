@@ -40,4 +40,4 @@ We developed a convolutional neural network able to discern between generally ca
 
 ## Source Code
 
-The source code used for this research project is fully open source and available on my GitHub [here](https://github.com/will-s-h/tongue-cnn). Note: due to privacy concerns, raw image data used in this project is not included.
+The source code used for this research project is fully open source and available on my GitHub [here](https://github.com/will-s-h/tongue-cnn). Note: raw image data used in this project is not included.

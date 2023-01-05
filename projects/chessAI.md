@@ -3,7 +3,7 @@ title: 'SalmonEngine: a Chess AI'
 date: '2023-01-04'
 tags: ['PyTorch', 'CNN', 'Reinforcement Learning']
 description: 'An entirely self-built chess AI using PyTorch CNNs and reinforcement learning.'
-featured: true
+featured: false
 ---
 
 ## Overview

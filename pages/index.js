@@ -32,7 +32,8 @@ export default function Home({ allPostsData, allProjectsData }) {
 
       <section class="text-sans text-lg text-justify">
         <p>Hi, I'm William. I'm a <span class="text-red font-bold">software engineer</span> and <span class="text-purple font-bold">physicist</span> at Stanford University.
-        Most recently, I was the <span class="text-orange font-bold">lead researcher</span> studying Fast Radio Bursts at Stanford. Before that, I won a Gold Medal at 
+        I'm currently a <span class="text-yellow font-bold">medical AI researcher</span> in the Ng Lab (Stanford) and Rajpurkar Lab (Harvard Med). 
+        Previously, I was the <span class="text-orange font-bold">lead researcher</span> studying Fast Radio Bursts at Stanford. Before that, I won a Gold Medal at 
         the <span class="font-bold">International Physics Olympiad</span>. To contact me, simply 
         email <Link href="mailto:willsh@stanford.edu" class="text-blue font-bold hover:text-opacity-70">willsh@stanford.edu</Link>.</p>
         <p class="pb-3"/>

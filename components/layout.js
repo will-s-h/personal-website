@@ -4,7 +4,6 @@ import NavBar from './navbar';
 import Footer from './footer';
 
 import Head from 'next/head';
-import Link from 'next/link';
 import React from 'react';
 const Fragment = React.Fragment;
 

@@ -3,7 +3,7 @@ title: 'Personal Website'
 date: '2023-01-01'
 tags: ['React', 'Next.js', 'Tailwind CSS', 'Vercel']
 description: 'This website, built with React, Next.js 13, and Tailwind CSS, deployed to the web with Vercel.'
-featured: true
+featured: false
 ---
 
 ## Overview

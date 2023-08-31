@@ -3,7 +3,7 @@ title: 'Studying the Accretion History of the Milky Way Using Mock Observations 
 date: '2021-01-01'
 tags: ['astrophysics', 'Python']
 description: 'American Astronomical Society (2021). Statistically modelled observations on galaxy simulations and analyzed the Milky Way''s history.'
-featured: true
+featured: false
 ---
 
 ## Overview

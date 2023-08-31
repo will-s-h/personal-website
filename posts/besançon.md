@@ -3,7 +3,7 @@ title: 'Comparing the Substructure of the Milky Way Galaxy to the Besançon Mode
 date: '2022-04-09'
 tags: ['astrophysics', 'Python']
 description: 'American Physical Society (2022). Examined substructural features of the Milky Way with respect to classical, smooth Besançon models.'
-featured: true
+featured: false
 ---
 
 ## Overview

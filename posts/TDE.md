@@ -3,7 +3,7 @@ title: 'Looking for Tidal Disruption Events in Virgo''s Globular Clusters'
 date: '2019-11-01'
 tags: ['astrophysics', 'Python']
 description: 'American Physical Society (2019). Modeled monochromatic luminosity curve of TDEs with accretion disk and super-Eddington wind, estimated observational feasibility.'
-featured: true
+featured: false
 ---
 
 ## Overview

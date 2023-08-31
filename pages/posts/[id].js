@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 
 export default function Post({ postData }) {
   return (
@@ -21,7 +22,7 @@ export default function Post({ postData }) {
 
       <hr class="my-3 mx-auto w-48 h-1 bg-gray-200 rounded border-0"/>
       <div class="prose prose-lg max-w-none">
-        <ReactMarkdown>{postData.content}</ReactMarkdown>
+        <ReactMarkdown rehypePlugins={[rehypeRaw]}>{postData.content}</ReactMarkdown>
       </div>
     </Layout>
   )

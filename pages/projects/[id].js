@@ -5,6 +5,7 @@ import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 import ReactMarkdown from 'react-markdown';
 import Custom404 from '../404';
+import rehypeRaw from 'rehype-raw';
 
 export default function Project({ projectData }) {
   return (
@@ -22,7 +23,7 @@ export default function Project({ projectData }) {
 
       <hr class="my-3 mx-auto w-48 h-1 bg-gray-200 rounded border-0"/>
       <div class="prose prose-md mlg:prose-lg max-w-none">
-        <ReactMarkdown>{projectData.content}</ReactMarkdown>
+        <ReactMarkdown rehypePlugins={[rehypeRaw]}>{projectData.content}</ReactMarkdown>
       </div>
     </Layout>
   )

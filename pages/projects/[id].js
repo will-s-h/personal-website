@@ -14,15 +14,15 @@ export default function Project({ projectData }) {
         <title>{projectData.title}</title>
       </Head>
         
-      <h1 class="text-black text-center font-sans font-bold text-3xl mlg:text-5xl pb-2">{projectData.title}</h1>
-      <div class="text-center font-light text-xl w-full">
+      <h1 className="text-black text-center font-sans font-bold text-3xl mlg:text-5xl pb-2">{projectData.title}</h1>
+      <div className="text-center font-light text-xl w-full">
         <Date dateString={projectData.date}/>
       </div>
 
       {/* TODO: code section for tags */}
 
-      <hr class="my-3 mx-auto w-48 h-1 bg-gray-200 rounded border-0"/>
-      <div class="prose prose-md mlg:prose-lg max-w-none">
+      <hr className="my-3 mx-auto w-48 h-1 bg-gray-200 rounded border-0"/>
+      <div className="prose prose-md mlg:prose-lg max-w-none">
         <ReactMarkdown rehypePlugins={[rehypeRaw]}>{projectData.content}</ReactMarkdown>
       </div>
     </Layout>

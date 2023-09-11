@@ -16,7 +16,7 @@ export default function Layout({ children, home }) {
       </Head>
       <div className={styles.defeatScrollBar}>
         <NavBar/>
-        <div class="mt-5 max-w-[1280px] mx-auto px-4 lg:px-6">
+        <div className="mt-5 max-w-[1280px] mx-auto px-4 lg:px-6">
           <main>{children}</main>
         </div>
         <Footer/>

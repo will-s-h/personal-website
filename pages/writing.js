@@ -20,7 +20,7 @@ export default function Home({ allPostsData }) {
         <title>Writing</title>
       </Head>
 
-      <div class="font-sans font-extrabold text-6xl sm:text-6xl md:text-7xl pb-10 tracking-tight 
+      <div className="font-sans font-extrabold text-6xl sm:text-6xl md:text-7xl pb-10 tracking-tight 
       text-black">
         Writing
       </div>
@@ -29,7 +29,7 @@ export default function Home({ allPostsData }) {
         <p>Here is an assortment of my research papers, notes, and other writing.</p>
       </section>
 
-      <p class="pb-5"/>
+      <p className="pb-5"/>
 
       <AllPosts allPostsData={allPostsData}/>      
     </Layout>

@@ -13,15 +13,15 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
         
-      <h1 class="text-black text-center font-sans font-bold text-5xl pb-2 ">{postData.title}</h1>
-      <div class="text-center font-light text-xl">
+      <h1 className="text-black text-center font-sans font-bold text-5xl pb-2 ">{postData.title}</h1>
+      <div className="text-center font-light text-xl">
         <Date dateString={postData.date}/>
       </div>
 
       {/* TODO: code section for tags */}
 
-      <hr class="my-3 mx-auto w-48 h-1 bg-gray-200 rounded border-0"/>
-      <div class="prose prose-lg max-w-none">
+      <hr className="my-3 mx-auto w-48 h-1 bg-gray-200 rounded border-0"/>
+      <div className="prose prose-lg max-w-none">
         <ReactMarkdown rehypePlugins={[rehypeRaw]}>{postData.content}</ReactMarkdown>
       </div>
     </Layout>

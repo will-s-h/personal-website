@@ -12,6 +12,13 @@ html {
   font-size: 18px;
 }
 
+@media (prefers-color-scheme: dark) {
+  body, html {
+    background-color: rgb(24 24 27);
+    color: white;
+  }
+}
+
 body {
   padding: 0;
   margin: 0;

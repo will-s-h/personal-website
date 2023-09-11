@@ -14,7 +14,7 @@ export default function Project({ projectData }) {
         <title>{projectData.title}</title>
       </Head>
         
-      <h1 className="text-black text-center font-sans font-bold text-3xl mlg:text-5xl pb-2">{projectData.title}</h1>
+      <h1 className="text-black dark:text-white text-center font-sans font-bold text-3xl mlg:text-5xl pb-2">{projectData.title}</h1>
       <div className="text-center font-light text-xl w-full">
         <Date dateString={projectData.date}/>
       </div>
@@ -22,7 +22,7 @@ export default function Project({ projectData }) {
       {/* TODO: code section for tags */}
 
       <hr className="my-3 mx-auto w-48 h-1 bg-gray-200 rounded border-0"/>
-      <div className="prose prose-md mlg:prose-lg max-w-none">
+      <div className="prose prose-md mlg:prose-lg max-w-none dark:text-white">
         <ReactMarkdown rehypePlugins={[rehypeRaw]}>{projectData.content}</ReactMarkdown>
       </div>
     </Layout>

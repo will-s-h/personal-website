@@ -21,7 +21,7 @@ export default function Home({ allProjectsData }) {
       </Head>
 
       <div className="font-sans font-extrabold text-6xl sm:text-6xl md:text-7xl pb-10 tracking-tight 
-      text-black">
+      text-black dark:text-white">
         Projects
       </div>
 

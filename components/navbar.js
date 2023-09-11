@@ -23,8 +23,8 @@ export default function NavBar() {
                         <Image
                             priority
                             src="/images/profile.jpg"
-                            height={100}
-                            width={100}
+                            height={80}
+                            width={80}
                             className= "rounded-full p-3"
                             alt="profile"
                         />
@@ -49,9 +49,9 @@ export default function NavBar() {
                     </div>
                     <nav className="hidden mlg:flex mlg:order-1" id="mobile-menu-2">
                         {navBarPages.map(([title, url], i) => (
-                            <Link key={i} href={url} className="rounded-lg px-7 py-2 text-black dark:text-white font-semibold group transition duration-300 hover:scale-110" style={{textDecoration: 'none'}}>
+                            <Link key={i} href={url} className="rounded-lg px-7 py-2 text-black dark:text-white font-light group transition duration-300 hover:scale-110" style={{textDecoration: 'none'}}>
                                 {title}
-                                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-red">
+                                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 rounded-lg bg-red/50">
                                 </span>
                             </Link>
                         ))}

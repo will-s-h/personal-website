@@ -20,7 +20,7 @@ export default function Home({ allProjectsData }) {
         <title>Projects</title>
       </Head>
 
-      <div className="font-sans font-extrabold text-6xl sm:text-6xl md:text-7xl pb-10 tracking-tight 
+      <div className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl pb-3 tracking-tight 
       text-black dark:text-white">
         Projects
       </div>

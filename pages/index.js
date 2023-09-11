@@ -20,14 +20,8 @@ export default function Home({ allPostsData, allProjectsData }) {
   return <>
     <Layout home>
       <div className="font-sans font-extrabold text-5xl sm:text-6xl md:text-7xl tracking-tight 
-      text-black text-center pb-8">
-        <span className="rotate-6 bg-red px-1 inline-block">
-          <span className="-rotate-3 bg-orange px-2 inline-block">
-            <span className="-rotate-3 bg-yellow px-3 inline-block">
-              William Huang
-            </span>
-          </span>
-        </span>
+      text-black dark:text-slate-100 text-center pb-8">
+        William Huang
       </div>
 
       <section className="text-sans text-lg text-justify">

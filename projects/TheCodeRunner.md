@@ -3,7 +3,7 @@ title: 'The Code Runner'
 date: '2023-02-20'
 tags: ['Python', 'education', 'Pygame']
 description: 'A new way to learn code: Python programming in the context of an educational game.'
-featured: true
+featured: false
 ---
 
 ![image](/files/thecoderunner/example3.png)
